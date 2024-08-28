@@ -6,7 +6,7 @@ Saya harap pada minggu ini kalian benar - benar faham bagaimana bahasa pemrogram
 Disini ada 2 folder berbeda yang berisi source code contoh pemrograman PHP Dasar (Nama foldernya : crud & siswa).
 
 ### Panduan :
-1. Jika pada PC kalian belum terinstall web server (xampp, wampserver) maka install dulu (disini ada aplikasi xampp nya). 
+1. Jika pada PC kalian belum terinstall web server (xampp, wampserver) maka install dulu. 
 2. Jika sudah terinstall, Jalankan Xampp controll panelnya.  dan start modul apache & mySQL nya.
 3. Copy kedua folder source code (crud & siswa) ke dalam direktori C:/xampp/htdocs.
 4. Lalu, buka web browser (chrome/edge/mozila/dll) lalu ketikan localhost atau localhost:8080 pada kolom pencarian yang di atas.
