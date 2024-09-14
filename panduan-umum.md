@@ -9,5 +9,5 @@
 4. List User / Pengguna
 5. Buat Alur Pengolahan Data
    Diagram UML (Usecase, Activity, Class, Sequence)
-6. Tampilan / mockup -->
+6. Tampilan / mockup (Boleh menggunakan aplikasi apapun)
 7. Building / Coding / Pengerjaan.
