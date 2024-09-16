@@ -17,11 +17,8 @@ Disini ada 2 folder berbeda yang berisi source code contoh pemrograman PHP Dasar
 9. Proses import database berhasil jika anda melihat ijo - ijo di layar.
 10. Jika sudah berhasil, buka tab baru pada browser, lalu ketikkan localhost/namafolder sourcecode-nya (contoh : localhost/crud). atau localhost:8080/namafolder (contoh : localhost:8080/crud)
 11. coba uji dan coba fitur - fitur (tambah, edit, hapus data) pada web tersebut.
-
-### Tugas 1  :
-Praktikan panduan di atas sampai berhasil., lalu ulangi praktiknya 1 x lagi sambil melakukan screen record / rekam layar menggunakan aplikasi screenRec(Aplikasi sudah tersedia di folder, tinggal diinstall & signup dengan gmail). (Note : nyalakan kamera jika PC nya ada kameraan., jika tidak ada, ubah dulu wallpaper pc nya dengan foto anda). kumpulkan videona maksimal hari sabtu, 17 Agustus 2024 pukul 17.50 WIB.
  
-### Tugas 2 :
+### Tugas 1 :
 1. Install Aplikasi VSCode (aplikasi ada di folder ini)
 2. Buka VSCode nya, lalu open folder crud yang sudah dicopy sebelumya pada htdocs.
 3. Analisis setiap qodiyah atau bagian dari script pada semua file (berkestensi .php dan .sql) dalam folder tersebut.
@@ -29,11 +26,6 @@ Praktikan panduan di atas sampai berhasil., lalu ulangi praktiknya 1 x lagi samb
 5. Saya menyisipkan komentar (baris komentar ditandai dengan awalan # atau berada diantara tag <!-- --> ) untuk membantu anda.
 6. Lapor secara langsung ke saya jika sudah faham, cara lapornya "Axaaxahmexed axabdixi toxos paxahaxam". maksimal hari sabtu, 17 Agustus 2024 pukul 17.50 WIB.
 
-### Tugas 3 :
-1. Ulangi langkah 2 s.d 6 pada tugas 2 dengan  source folder code siswa.
-2. Cari perbedaannya dari source code pada folder crud.
-3. Lapor secara langsung ke saya jika sudah ketemu, cara lapornya "Axaaxahmexed axabdixi toxos kexetexemuxu". maksimal hari minggu, 18 Agustus 2024 pukul 17.50 WIB.
 
 ### Tugas 4 (Perkelompok prakerin):
 1. Buat Aplikasi sederhana yang serupa dengan source code folder siswa dengan tema ide aplikasi yang akan kalian buat dari hasil penelitian di tempat kalian prakerin (+database baru, minimal 1 tabel). 
-2. Kumpulkan folder aplikasi yang dibuat (+file database berekstensi .sql hasil eksport-annya) maksimal hari minggu, 18 Agustus 2024 pukul 17.50 WIB.
