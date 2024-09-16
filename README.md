@@ -27,5 +27,5 @@ Disini ada 2 folder berbeda yang berisi source code contoh pemrograman PHP Dasar
 6. Lapor secara langsung ke saya jika sudah faham, cara lapornya "Axaaxahmexed axabdixi toxos paxahaxam". maksimal hari sabtu, 17 Agustus 2024 pukul 17.50 WIB.
 
 
-### Tugas 4 (Perkelompok prakerin):
+### Tugas 2 (Perkelompok prakerin):
 1. Buat Aplikasi sederhana yang serupa dengan source code folder siswa dengan tema ide aplikasi yang akan kalian buat dari hasil penelitian di tempat kalian prakerin (+database baru, minimal 1 tabel). 
