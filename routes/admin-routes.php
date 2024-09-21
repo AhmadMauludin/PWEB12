@@ -29,4 +29,8 @@ if (empty($_GET["page"])) {
     include "pegawai/update.php";
 } elseif ($_GET['page'] == 'pegawai-hapus') {
     include "pegawai/hapus.php";
+} elseif ($_GET['page'] == 'pegawai-print-detail') {
+    include "pegawai/print-detail.php";
+} elseif ($_GET['page'] == 'pegawai-kirim') {
+    include "pegawai/kirim.php";
 }

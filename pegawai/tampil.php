@@ -119,10 +119,19 @@ if (isset($_POST['cari'])) {
                       <td width='150'>$data[nama]</td>
                       <td width='150'>$data[jabatan]</td>
                       <td width='150'>$data[bidang]</td>
-                      <td width='100' class='center'>
+                      <td width='150' class='center'>
                         <div class=''>
-                        <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:5px' class='btn btn-success btn-sm' href='?page=pegawai-detail&id=$data[nis]'> <i class='glyphicon glyphicon-eye-open'></i> </a>  
-                        <a data-toggle='tooltip' data-placement='top' title='Edit' style='margin-right:5px' class='btn btn-info btn-sm' href='?page=pegawai-edit&id=$data[nis]'> <i class='glyphicon glyphicon-edit'></i></a>";
+
+                        <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:5px' class='btn btn-success btn-sm' href='?page=pegawai-detail&id=$data[nis]'> <i class='glyphicon glyphicon-eye-open'></i> </a> 
+
+                        <a data-toggle='tooltip' data-placement='top' title='Print' style='margin-right:5px' class='btn btn-warning btn-sm' href='?page=pegawai-print-detail&id=$data[nis]' target='_blank'> <i class='glyphicon glyphicon-print'></i> </a>
+
+                        <a data-toggle='tooltip' data-placement='top' title='Edit' style='margin-right:5px' class='btn btn-primary btn-sm' href='?page=pegawai-edit&id=$data[nis]'> <i class='glyphicon glyphicon-edit'></i></a>
+                        
+                        <a data-toggle='tooltip' data-placement='top' title='Kirim' style='margin-right:5px' class='btn btn-info btn-sm' href='?page=pegawai-kirim&id=$data[nis]'><i class='glyphicon glyphicon-share'></i></a>  
+                                                
+                                                ";
+
                             ?>
                                 <a data-toggle="tooltip" data-placement="top" title="Hapus" class="btn btn-danger btn-sm" href="?page=pegawai-hapus&id=<?php echo $data['nis']; ?>" onclick="return confirm('Anda yakin ingin menghapus <?php echo $data['nama']; ?>?');"> <i class="glyphicon glyphicon-trash"></i></a>
                             <?php
