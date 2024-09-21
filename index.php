@@ -88,14 +88,10 @@ require_once "config/database.php";
 
   <div class="container-fluid">
     <?php
-    if (empty($_GET["page"])) {
-      include "tampil-data.php";
-    } elseif ($_GET['page'] == 'tambah') {
-      include "form-tambah.php";
-    } elseif ($_GET['page'] == 'ubah') {
-      include "form-ubah.php";
-    } elseif ($_GET['page'] == 'detail') {
-      include "detail.php";
+    if ($_SESSION['level'] == "Admin") {
+      include 'routes/admin-routes.php';
+    } else if ($_SESSION['level'] == "Siswa") {
+      include 'routes/pegawai-routes.php';
     }
     ?>
   </div> <!-- /.container-fluid -->

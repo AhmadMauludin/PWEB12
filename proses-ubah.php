@@ -1,6 +1,7 @@
 <?php
 // Panggil koneksi database
 require_once "config/database.php";
+
 if (isset($_POST['simpan'])) {
 	if (isset($_POST['id'])) {
 		$id        = mysqli_real_escape_string($db, trim($_POST['id']));
