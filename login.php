@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>Smartren Login</title>
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Dispekael Login</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
 </head>
 
 <body>
@@ -19,12 +19,12 @@
 
     <div class="kotak_login">
         <center><img src="assets/img/favicon.png"></center>
-        <p class="tulisan_login"> WELCOME TO <B>SMARTREN</B></p>
+        <p class="tulisan_login"> WELCOME TO <B>DISPEKAEL</B></p>
         <hr>
 
         <form action="cek_login.php" method="post">
-            <P><label>Id user</label></P>
-            <input type="text" name="iduser" class="form_login" placeholder="Masukan id user" required="required">
+            <P><label>Id</label></P>
+            <input type="text" name="id" class="form_login" placeholder="Masukan id" required="required">
             <label>Password</label>
             <p><input type="password" name="password" class="form_login" placeholder="Masukkan Password" required="required"></p>
 

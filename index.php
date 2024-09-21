@@ -64,9 +64,25 @@ require_once "config/database.php";
 </head>
 
 <body>
+  <!--- untuk mengecek sesi di index -->
+  <?php
+  session_start();
+
+  if ($_SESSION['level'] == "") {
+    header("location:login.php?pesan=gagal");
+  }
+  ?>
+
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
-      <?php include "menu.php"; ?>
+      <!--- untuk menampilkan menu sesuai dengan level -->
+      <?php
+      if ($_SESSION['level'] == "Admin") {
+        include 'menu/menu.php';
+      } else if ($_SESSION['level'] == "Siswa") {
+        include 'menu/menu-pengurus.php';
+      }
+      ?>
     </div> <!-- /.container-fluid -->
   </nav>
 
