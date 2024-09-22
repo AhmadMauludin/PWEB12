@@ -35,7 +35,14 @@ if ($cek > 0) {
         $_SESSION['id'] = $id;
         $_SESSION['level'] = "Siswa";
         // alihkan ke halaman dashboard pegawai
-        header("location:index_siswa.php");
+        header("location:index.php");
+        // cek jika user login sebagai pegawai
+    } else if ($data['level'] == "Guru") {
+        // buat session login dan username
+        $_SESSION['id'] = $id;
+        $_SESSION['level'] = "Guru";
+        // alihkan ke halaman dashboard pegawai
+        header("location:index.php");
     } else {
 
         // alihkan ke halaman login kembali

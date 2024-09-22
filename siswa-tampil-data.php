@@ -70,7 +70,7 @@ if (isset($_POST['cari'])) {
 
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Data User</h3>
+        <h3 class="panel-title">Data Anda</h3>
       </div>
       <div class="panel-body">
         <div class="table-responsive">
@@ -92,10 +92,10 @@ if (isset($_POST['cari'])) {
 
               if (isset($cari)) {
                 $jumlah_record = mysqli_query($db, "SELECT * FROM user
-                                                    WHERE nis LIKE '%$cari%' OR username LIKE '%$cari%'")
+                                                    WHERE id LIKE '%$cari%' OR username LIKE '%$cari%'")
                   or die('Ada kesalahan pada query jumlah_record: ' . mysqli_error($db));
               } else {
-                $jumlah_record = mysqli_query($db, "SELECT * FROM user")
+                $jumlah_record = mysqli_query($db, "SELECT * FROM user WHERE id='3'")
                   or die('Ada kesalahan pada query jumlah_record: ' . mysqli_error($db));
               }
 
@@ -107,11 +107,11 @@ if (isset($_POST['cari'])) {
               $no = 1;
               if (isset($cari)) {
                 $query = mysqli_query($db, "SELECT * FROM user
-                                            WHERE nis LIKE '%$cari%' OR username LIKE '%$cari%' 
+                                            WHERE id LIKE '%$cari%' OR username LIKE '%$cari%' 
                                             ORDER BY id LIMIT $mulai, $batas")
                   or die('Ada kesalahan pada query user: ' . mysqli_error($db));
               } else {
-                $query = mysqli_query($db, "SELECT * FROM user
+                $query = mysqli_query($db, "SELECT * FROM user WHERE id='3'
                                             ORDER BY id LIMIT $mulai, $batas")
                   or die('Ada kesalahan pada query user: ' . mysqli_error($db));
               }

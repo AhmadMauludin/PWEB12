@@ -89,7 +89,9 @@ require_once "config/database.php";
       if ($_SESSION['level'] == "Admin") {
         include 'menu/menu.php';
       } else if ($_SESSION['level'] == "Siswa") {
-        include 'menu/menu-pengurus.php';
+        include 'menu/menu-siswa.php';
+      } else if ($_SESSION['level'] == "Guru") {
+        include 'menu/menu-guru.php';
       }
       ?>
     </div> <!-- /.container-fluid -->
@@ -100,7 +102,9 @@ require_once "config/database.php";
     if ($_SESSION['level'] == "Admin") {
       include 'routes/admin-routes.php';
     } else if ($_SESSION['level'] == "Siswa") {
-      include 'routes/pegawai-routes.php';
+      include 'routes/siswa-routes.php';
+    } else if ($_SESSION['level'] == "Guru") {
+      include 'routes/guru-routes.php';
     }
     ?>
   </div> <!-- /.container-fluid -->
