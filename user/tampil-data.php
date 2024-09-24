@@ -129,14 +129,9 @@ if (isset($_POST['cari'])) {
                         <div class=''>
                         <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:5px' class='btn btn-success btn-sm' href='?page=detail&id=$data[id]'>
                             <i class='glyphicon glyphicon-eye-open'></i>
-                          </a>  
-                        <a data-toggle='tooltip' data-placement='top' title='Ubah' style='margin-right:5px' class='btn btn-info btn-sm' href='?page=ubah&id=$data[id]'>
-                            <i class='glyphicon glyphicon-edit'></i>
-                          </a>";
+                          </a> ";
               ?>
-                <a data-toggle="tooltip" data-placement="top" title="Hapus" class="btn btn-danger btn-sm" href="?page=proses-hapus&id=<?php echo $data['id']; ?>" onclick="return confirm('Anda yakin ingin menghapus user <?php echo $data['username']; ?>?');">
-                  <i class="glyphicon glyphicon-trash"></i>
-                </a>
+                <a data-toggle="tooltip" data-placement="top" title="Hapus" class="btn btn-danger btn-sm" href="?page=proses-hapus&id=<?php echo $data['id']; ?>" onclick="return confirm('Anda yakin ingin menghapus user <?php echo $data['username']; ?>?');"><i class="glyphicon glyphicon-trash"></i></a>
               <?php
                 echo "
                         </div>

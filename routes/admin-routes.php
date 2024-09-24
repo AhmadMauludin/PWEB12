@@ -40,4 +40,15 @@ if (empty($_GET["page"])) {
     include "pegawai/print-detail.php";
 } elseif ($_GET['page'] == 'pegawai-kirim') {
     include "pegawai/kirim.php";
+    // users
+} elseif ($_GET['page'] == 'users-tampil') {
+    include "users/tampil.php";
+} elseif ($_GET['page'] == 'users-detail') {
+    include "users/detail.php";
+} elseif ($_GET['page'] == 'aktivasi-users') {
+    include "users/aktivasi-users.php";
+} elseif ($_GET['page'] == 'aktivasi') {
+    include "users/aktivasi.php";
+} elseif ($_GET['page'] == 'users-hapus') {
+    include "users/hapus.php";
 }

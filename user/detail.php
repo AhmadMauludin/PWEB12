@@ -24,7 +24,13 @@
             <li class="list-group-item active"><b>DETAIL DATA</b></li>
             <li class="list-group-item">Id : <b><?php echo $id; ?></b></li>
             <li class="list-group-item">Username : <b><?php echo $username; ?></b></li>
-            <li class="list-group-item">Password : <b><?php echo $password; ?></b></li>
+            <li class="list-group-item">Password : <b>
+                    <?php
+                    if ($_SESSION['level'] == "Admin") {
+                        echo '**********';
+                    } else if ($_SESSION['level'] == "User") {
+                        echo '$password';
+                    }  ?></b></li>
             <li class="list-group-item">Level : <b><?php echo $level; ?></b></li>
             <li class="list-group-item">Nis : <b><?php echo $nis; ?></b></li>
         </ul>

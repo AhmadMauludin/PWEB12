@@ -3,7 +3,7 @@
       <div class="page-header">
         <h4>
           <i class="glyphicon glyphicon-edit"></i>
-          Ubah Data User
+          Ubah Data Login User
         </h4>
       </div> <!-- /.page-header -->
       <?php
@@ -47,11 +47,8 @@
             <div class="form-group">
               <label class="col-sm-2 control-label">Level</label>
               <div class="col-sm-3">
-                <select class="form-control" name="level" placeholder="Pilih level" required>
+                <select class="form-control" name="level" placeholder="Pilih level" readonly>
                   <option value="<?php echo $level; ?>"><?php echo $level; ?></option>
-                  <option value="Admin">Admin</option>
-                  <option value="Pegawai">Pegawai</option>
-                  <option value="User">User</option>
                 </select>
               </div>
             </div>

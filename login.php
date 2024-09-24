@@ -13,6 +13,8 @@
             echo "<div class='alert'>Id User dan Password tidak sesuai !</div>";
         } else if ($_GET['pesan'] == "logindulu") {
             echo "<div class='alert'>Silahkan Login dulu !</div>";
+        } else if ($_GET['pesan'] == "3") {
+            echo "<div class='alert'><b>Pendaftaran akun berhasil.</b> Silahkan Login menggunakan id dan password yang barusan anda buat</div>";
         }
     }
     ?>

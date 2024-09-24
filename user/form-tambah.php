@@ -11,8 +11,6 @@
         <div class="panel-body">
           <form class="form-horizontal" method="POST" action="?page=proses-simpan">
 
-
-
             <div class="form-group">
               <label class="col-sm-2 control-label">Username</label>
               <div class="col-sm-3">
@@ -27,8 +25,6 @@
               </div>
             </div>
 
-
-
             <div class="form-group">
               <label class="col-sm-2 control-label">Level</label>
               <div class="col-sm-3">
@@ -40,7 +36,6 @@
                 </select>
               </div>
             </div>
-
 
             <div class="form-group">
               <label class="col-sm-2 control-label">Nis</label>
