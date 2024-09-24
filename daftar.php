@@ -29,12 +29,12 @@
             <p><input type="password" name="password" class="form_login" placeholder="Masukkan Password" required="required"></p>
 
             <p>
-                <center><input type="submit" class="tombol_login" value="MASUK">
+                <center><input type="submit" class="tombol_login" value="DAFTAR">
             </p>
         </form>
         <hr>
-        <p>Belum memiliki akun?
-            <a href="daftar.php">Daftar</a>
+        <p>Sudah memiliki akun?
+            <a href="login.php">Login</a>
         </p>
         </center>
     </div>

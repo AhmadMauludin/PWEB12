@@ -21,7 +21,7 @@
       ?>
       <div class="panel panel-default">
         <div class="panel-body">
-          <form class="form-horizontal" method="POST" action="proses-ubah.php">
+          <form class="form-horizontal" method="POST" action="?page=proses-ubah">
 
             <div class="form-group">
               <label class="col-sm-2 control-label">Id</label>
@@ -50,7 +50,8 @@
                 <select class="form-control" name="level" placeholder="Pilih level" required>
                   <option value="<?php echo $level; ?>"><?php echo $level; ?></option>
                   <option value="Admin">Admin</option>
-                  <option value="Siswa">Siswa</option>
+                  <option value="Pegawai">Pegawai</option>
+                  <option value="User">User</option>
                 </select>
               </div>
             </div>

@@ -134,7 +134,7 @@ if (isset($_POST['cari'])) {
                             <i class='glyphicon glyphicon-edit'></i>
                           </a>";
               ?>
-                <a data-toggle="tooltip" data-placement="top" title="Hapus" class="btn btn-danger btn-sm" href="proses-hapus.php?id=<?php echo $data['id']; ?>" onclick="return confirm('Anda yakin ingin menghapus user <?php echo $data['username']; ?>?');">
+                <a data-toggle="tooltip" data-placement="top" title="Hapus" class="btn btn-danger btn-sm" href="?page=proses-hapus&id=<?php echo $data['id']; ?>" onclick="return confirm('Anda yakin ingin menghapus user <?php echo $data['username']; ?>?');">
                   <i class="glyphicon glyphicon-trash"></i>
                 </a>
               <?php

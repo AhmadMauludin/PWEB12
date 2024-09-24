@@ -9,7 +9,7 @@
 
       <div class="panel panel-default">
         <div class="panel-body">
-          <form class="form-horizontal" method="POST" action="proses-simpan.php">
+          <form class="form-horizontal" method="POST" action="?page=proses-simpan">
 
 
 
@@ -35,7 +35,8 @@
                 <select class="form-control" name="level" placeholder="Pilih Level" required>
                   <option value=""></option>
                   <option value="Admin">Admin</option>
-                  <option value="Siswa">Siswa</option>
+                  <option value="Pegawai">Pegawai</option>
+                  <option value="User">User</option>
                 </select>
               </div>
             </div>

@@ -3,15 +3,22 @@
 // User
 
 if (empty($_GET["page"])) {
-    include "tampil-data.php";
+    include "user/tampil-data.php";
 } elseif ($_GET['page'] == 'user-tampil') {
-    include "tampil-data.php";
+    include "user/tampil-data.php";
 } elseif ($_GET['page'] == 'tambah') {
-    include "form-tambah.php";
+    include "user/form-tambah.php";
+} elseif ($_GET['page'] == 'proses-simpan') {
+    include "user/proses-simpan.php";
 } elseif ($_GET['page'] == 'ubah') {
-    include "form-ubah.php";
+    include "user/form-ubah.php";
+} elseif ($_GET['page'] == 'proses-ubah') {
+    include "user/proses-ubah.php";
 } elseif ($_GET['page'] == 'detail') {
-    include "detail.php";
+    include "user/detail.php";
+} elseif ($_GET['page'] == 'proses-hapus') {
+    include "user/proses-hapus.php";
+
 
     // Pegawai
 

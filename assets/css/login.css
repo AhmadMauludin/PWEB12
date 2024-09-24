@@ -27,6 +27,7 @@ h1{
 
 }
 
+
 hr{
     border: none;
     height: 1px;
@@ -48,6 +49,16 @@ label{
  
 .tombol_login{
 	background: #2aa7e2;
+	color: white;
+	font-size: 11pt;
+	width: 40%;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+
+.tombol_daftar{
+	background: #0cb900;
 	color: white;
 	font-size: 11pt;
 	width: 40%;

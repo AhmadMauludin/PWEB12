@@ -83,28 +83,28 @@ require_once "config/database.php";
   ?>
 
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <!--- untuk menampilkan menu sesuai dengan level -->
-      <?php
-      if ($_SESSION['level'] == "Admin") {
-        include 'menu/menu.php';
-      } else if ($_SESSION['level'] == "Siswa") {
-        include 'menu/menu-siswa.php';
-      } else if ($_SESSION['level'] == "Guru") {
-        include 'menu/menu-guru.php';
-      }
-      ?>
-    </div> <!-- /.container-fluid -->
+    <!--- untuk menampilkan menu sesuai dengan level -->
+    <?php
+    if ($_SESSION['level'] == "Admin") {
+      include 'menu/menu-admin.php';
+    } else if ($_SESSION['level'] == "Pegawai") {
+      include 'menu/menu-pegawai.php';
+    } else if ($_SESSION['level'] == "User") {
+      include 'menu/menu-user.php';
+    }
+    ?>
   </nav>
 
   <div class="container-fluid">
     <?php
     if ($_SESSION['level'] == "Admin") {
       include 'routes/admin-routes.php';
-    } else if ($_SESSION['level'] == "Siswa") {
-      include 'routes/siswa-routes.php';
-    } else if ($_SESSION['level'] == "Guru") {
-      include 'routes/guru-routes.php';
+    } else if ($_SESSION['level'] == "Pegawai") {
+      include 'routes/pegawai-routes.php';
+    } else if ($_SESSION['level'] == "User") {
+      include 'routes/user-routes.php';
+    } else if ($_SESSION['level'] == "") {
+      include 'routes/other.php';
     }
     ?>
   </div> <!-- /.container-fluid -->
