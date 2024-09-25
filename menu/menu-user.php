@@ -19,7 +19,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
             <li><a href="?page=users-tampil"> <i class="glyphicon glyphicon-user"></i> TIM </a></li>
-            <li><a href="?page=seminar-tampil"> <i class="glyphicon glyphicon-blackboard"></i> SEMINAR</a></li>
+            <li><a href="?page=seminar"> <i class="glyphicon glyphicon-blackboard"></i> SEMINAR</a></li>
             <li><a href="?page=ubah&id=<?php echo $ids ?>"><?php echo $_SESSION['id']; ?> <span class="badge"><?php echo $_SESSION['level']; ?></a></span></li>
 
             <li><a href="logout.php"> <i class="glyphicon glyphicon-log-out"></i></a></li>

@@ -112,7 +112,7 @@ require_once "config/database.php";
   <footer class="footer">
     <div class="container-fluid">
       <p class="text-muted pull-left">Dispekael</p>
-      <p class="text-muted pull-right print">Meunang <a href="http://www.instagram.com/mmmaldin" target="_blank">Maldin</a></p>
+      <p class="text-muted pull-right print">By <a href="http://www.instagram.com/mmmaldin" target="_blank">Maldin</a></p>
     </div>
   </footer>
 

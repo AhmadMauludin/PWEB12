@@ -3,7 +3,7 @@
 // User
 
 if (empty($_GET["page"])) {
-    include "user/tampil-data.php";
+    include "dashboard/dashboard-admin.php";
 } elseif ($_GET['page'] == 'user-tampil') {
     include "user/tampil-data.php";
 } elseif ($_GET['page'] == 'tambah') {
@@ -40,6 +40,7 @@ if (empty($_GET["page"])) {
     include "pegawai/print-detail.php";
 } elseif ($_GET['page'] == 'pegawai-kirim') {
     include "pegawai/kirim.php";
+
     // users
 } elseif ($_GET['page'] == 'users-tampil') {
     include "users/tampil.php";
@@ -51,4 +52,18 @@ if (empty($_GET["page"])) {
     include "users/aktivasi.php";
 } elseif ($_GET['page'] == 'users-hapus') {
     include "users/hapus.php";
+
+    // seminar
+} elseif ($_GET['page'] == 'seminar-tampil') {
+    include "seminar/tampil.php";
+} elseif ($_GET['page'] == 'seminar-detail') {
+    include "seminar/detail.php";
+} elseif ($_GET['page'] == 'seminar-print-detail') {
+    include "seminar/print-detail.php";
+} elseif ($_GET['page'] == 'aktivasi-seminar') {
+    include "seminar/aktivasi-seminar.php";
+} elseif ($_GET['page'] == 'aktivasi-sem') {
+    include "seminar/aktivasi.php";
+} elseif ($_GET['page'] == 'seminar-hapus') {
+    include "seminar/hapus.php";
 }

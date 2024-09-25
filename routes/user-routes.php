@@ -32,4 +32,25 @@ if (empty($_GET["page"])) {
     include "users/print-detail.php";
 } elseif ($_GET['page'] == 'users-kirim') {
     include "users/kirim.php";
+    // seminar
+} elseif ($_GET['page'] == 'seminar') {
+    include "seminar/seminar.php";
+} elseif ($_GET['page'] == 'seminar-tampil') {
+    include "seminar/tampil.php";
+} elseif ($_GET['page'] == 'seminar-tambah') {
+    include "seminar/tambah.php";
+} elseif ($_GET['page'] == 'seminar-simpan') {
+    include "seminar/simpan.php";
+} elseif ($_GET['page'] == 'seminar-detail') {
+    include "seminar/detail.php";
+} elseif ($_GET['page'] == 'seminar-edit') {
+    include "seminar/edit.php";
+} elseif ($_GET['page'] == 'seminar-update') {
+    include "seminar/update.php";
+} elseif ($_GET['page'] == 'seminar-hapus') {
+    include "seminar/hapus.php";
+} elseif ($_GET['page'] == 'seminar-print-detail') {
+    include "seminar/print-detail.php";
+} elseif ($_GET['page'] == 'seminar-kirim') {
+    include "seminar/kirim.php";
 }

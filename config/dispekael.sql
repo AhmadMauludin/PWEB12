@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 24, 2024 at 10:34 PM
+-- Generation Time: Sep 25, 2024 at 10:06 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,8 +42,8 @@ CREATE TABLE `pegawai` (
 --
 
 INSERT INTO `pegawai` (`nis`, `nama`, `jabatan`, `bidang`, `telp`, `email`, `foto`) VALUES
-(1, 'Ahmad Mauludin, S.Kom', 'Kabid', 'Humas', '6289502918001', 'ahmadmaldin1799@gmail.com', '1350683862_WhatsApp Image 2023-08-24 at 21.05.13.jpeg'),
-(3333, 'Maldines Uzumaki', 'Staf', 'Humas', '6289765432', 'nidia@gmail.com', '335-1696307224982-removebg-preview.png');
+(1, 'Ahmad Mauludin, S.Kom', 'Kabid', 'Aplikasi', '6289502918001', 'ahmadmaldin1799@gmail.com', '1350683862_WhatsApp Image 2023-08-24 at 21.05.13.jpeg'),
+(2, 'Maldines Uzumaki', 'Staf', 'Laporan', '6289765432', 'nidia@gmail.com', '335-1696307224982-removebg-preview.png');
 
 -- --------------------------------------------------------
 
@@ -57,7 +57,7 @@ CREATE TABLE `seminar` (
   `judul` varchar(255) NOT NULL,
   `file` varchar(255) NOT NULL,
   `tautan` varchar(255) NOT NULL,
-  `status` varchar(30) NOT NULL,
+  `statussem` varchar(30) NOT NULL,
   `ket` varchar(255) NOT NULL,
   `pengujilap` int(8) NOT NULL,
   `pengujiapl` int(8) NOT NULL,
@@ -65,6 +65,14 @@ CREATE TABLE `seminar` (
   `nilailaporan` int(3) NOT NULL,
   `nilaiaplikasi` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `seminar`
+--
+
+INSERT INTO `seminar` (`idseminar`, `nis`, `judul`, `file`, `tautan`, `statussem`, `ket`, `pengujilap`, `pengujiapl`, `nilaiprakerin`, `nilailaporan`, `nilaiaplikasi`) VALUES
+(3, 3333, 'Aplikasi Seminar Prakerin Berbasis Web', '55203352_File Seminar.pdf', 'github.com/AhmadMauludin/PWEB12', 'Tidak Lulus', 'Selamat seminar nidia', 2, 1, 0, 0, 0),
+(4, 1234, 'Aplikasi Berbasis Web', '940491242_File Seminar.pdf', 'github.com/AhmadMauludin/PWEB12', 'Disetujui', 'Selamat seminar', 2, 1, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -114,7 +122,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`nis`, `id`, `nama`, `tanggal_lahir`, `alamat`, `instansi`, `telp`, `stat`, `foto`) VALUES
-(1234, 7, 'Deffa Sidik', '2024-09-01', 'Gundat Jaya', 'BPKAD', '6285175017991', 'Belum Aktif', 'defa.jpg'),
+(1234, 7, 'Deffa Sidik', '2024-09-01', 'Gundat Jaya', 'BPKAD', '6285175017991', 'Aktif', 'defa.jpg'),
 (3333, 6, 'Nidia Gitania Raya', '2024-09-04', 'Cina', 'BPKAD', '999999999', 'Aktif', '843-WhatsApp Image 2024-01-03 at 19.50.23 (1).jpeg'),
 (9876, 8, 'Fauzy Ahmad', '2024-09-25', 'Bandung', 'BPKAD', '99887766', 'Aktif', '1021152700_pratama-arhan-320x_.png');
 
@@ -160,7 +168,7 @@ ALTER TABLE `pegawai`
 -- AUTO_INCREMENT for table `seminar`
 --
 ALTER TABLE `seminar`
-  MODIFY `idseminar` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `idseminar` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `user`
