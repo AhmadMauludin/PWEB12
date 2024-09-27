@@ -29,8 +29,8 @@
                         <label class="col-sm-2 control-label">Jabatan</label>
                         <div class="col-sm-3">
                             <select class="form-control" name="jabatan" placeholder="Pilih Jabatan" required>
-                                <option value="Staf">Staf</option>
-                                <option value="Kabid">Kabid</option>
+                                <option value="Pembimbing">Pembimbing</option>
+                                <option value="Penguji">Penguji</option>
                             </select>
                         </div>
                     </div>
@@ -39,8 +39,16 @@
                         <label class="col-sm-2 control-label">Bidang</label>
                         <div class="col-sm-3">
                             <select class="form-control" name="bidang" placeholder="Pilih Bidang" required>
-                                <option value="Tata Usaha">Tata Usaha</option>
-                                <option value="Humas">Humas</option>
+                                <option value="Diskominfosanditik">Diskominfosanditik</option>
+                                <option value="BPKAD">BPKAD</option>
+                                <option value="Dinas Arsip">Dinas Arsip</option>
+                                <option value="Kementerian Agama">Kementerian Agama</option>
+                                <option value="Disparbudpora">Disparbudpora</option>
+                                <option value="Disdukcapil">Disdukcapil</option>
+                                <option value="Dinas Pendidikan">Dinas Pendidikan</option>
+                                <option value="Diskoperindag">Diskoperindag</option>
+                                <option value="Laporan">Laporan</option>
+                                <option value="Aplikasi">Aplikasi</option>
                             </select>
                         </div>
                     </div>
@@ -71,7 +79,7 @@
                         <div class="col-sm-offset-2 col-sm-10">
                             <input type="submit" name="" value="Simpan" class="btn btn-primary">
                 </form>
-                <a href="index.php" class="btn btn-default btn-reset">Batal</a>
+                <a href="?page=pegawai-tampil" class="btn btn-default btn-reset">Batal</a>
             </div>
         </div>
         </form>

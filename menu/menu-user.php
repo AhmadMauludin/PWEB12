@@ -9,7 +9,7 @@
 
         <a class="navbar-brand" href="index.php">
             <i class="glyphicon glyphicon-grain"></i>
-            Dispekael</a>
+            <b>Dispekael</b> <span class="badge"><?php echo $_SESSION['level']; ?></span></a>
     </div>
 
     <?php
@@ -20,8 +20,7 @@
         <ul class="nav navbar-nav navbar-right">
             <li><a href="?page=users-tampil"> <i class="glyphicon glyphicon-user"></i> TIM </a></li>
             <li><a href="?page=seminar"> <i class="glyphicon glyphicon-blackboard"></i> SEMINAR</a></li>
-            <li><a href="?page=ubah&id=<?php echo $ids ?>"><?php echo $_SESSION['id']; ?> <span class="badge"><?php echo $_SESSION['level']; ?></a></span></li>
-
+            <li><a href="?page=ubah&id=<?php echo $ids ?>"><i class="glyphicon glyphicon-cog"></i> SET</a></li>
             <li><a href="logout.php"> <i class="glyphicon glyphicon-log-out"></i></a></li>
         </ul>
     </div>

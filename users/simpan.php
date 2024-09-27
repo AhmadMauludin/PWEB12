@@ -23,7 +23,7 @@ if (!in_array($ext, $ekstensi)) {
         $xx = $rand . '_' . $filename;
         move_uploaded_file($_FILES['foto']['tmp_name'], 'users/gambar/' . $rand . '_' . $filename);
         mysqli_query($db, "INSERT INTO users VALUES('$nis','$id','$nama','$tanggal_lahir','$alamat','$instansi','$telp','$stat','$xx')");
-        header("location:?page=users-tampil&alert=2");
+        header("location:?page=index&alert=2");
     } else {
         header("location:?page=users-tampil&alert=1");
     }

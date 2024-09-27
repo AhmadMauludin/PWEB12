@@ -35,8 +35,17 @@
             <li class="list-group-item">Nis : <b><?php echo $nis; ?></b></li>
         </ul>
 
+        <?php
+        $kembali = "";
+        if ($_SESSION['level'] == "Admin" or "Pegawai") {
+            $kembali = "user-tampil";
+        } else if ($_SESSION['level'] == "User") {
+            $kembali = "index.php";
+        }
+        ?>
+
         <div class="form-group">
-            <a href="index.php" class="btn btn-default btn-reset">Kembali</a>
+            <a href="?page=<?php echo $kembali ?>" class="btn btn-default btn-reset">Kembali</a>
         </div>
     </div>
     </form>

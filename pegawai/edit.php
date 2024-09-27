@@ -38,8 +38,8 @@ if (isset($_GET['id'])) {
                 <div class="col-sm-2">
                     <select class="form-control" name="jabatan" placeholder="Pilih Jabatan" required>
                         <option value="<?php echo $jabatan; ?>"><?php echo $jabatan; ?></option>
-                        <option value="Staf">Staf</option>
-                        <option value="Kabid">Kabid</option>
+                        <option value="Pembimbing">Pembimbing</option>
+                        <option value="Penguji">Penguji</option>
                     </select>
                 </div>
             </div>
@@ -49,8 +49,16 @@ if (isset($_GET['id'])) {
                 <div class="col-sm-2">
                     <select class="form-control" name="bidang" placeholder="Pilih Bidang" required>
                         <option value="<?php echo $bidang; ?>"><?php echo $bidang; ?></option>
-                        <option value="Tata Usaha">Tata Usaha</option>
-                        <option value="Humas">Humas</option>
+                        <option value="Diskominfosanditik">Diskominfosanditik</option>
+                        <option value="BPKAD">BPKAD</option>
+                        <option value="Dinas Arsip">Dinas Arsip</option>
+                        <option value="Kementerian Agama">Kementerian Agama</option>
+                        <option value="Disparbudpora">Disparbudpora</option>
+                        <option value="Disdukcapil">Disdukcapil</option>
+                        <option value="Dinas Pendidikan">Dinas Pendidikan</option>
+                        <option value="Diskoperindag">Diskoperindag</option>
+                        <option value="Laporan">Laporan</option>
+                        <option value="Aplikasi">Aplikasi</option>
                     </select>
                 </div>
             </div>

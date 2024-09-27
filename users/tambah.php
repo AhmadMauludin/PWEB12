@@ -6,9 +6,6 @@
                 Silahkan Lengkapi Data Diri Anda
                 <?php
                 $ids = $_SESSION['id'];
-
-                echo $ids;
-
                 $jumlah_record1 = mysqli_query($db, "SELECT * FROM user where id = $ids") or die('Ada kesalahan pada query jumlah_record: ' . mysqli_error($db));
                 $data = mysqli_fetch_assoc($jumlah_record1);
                 $niss = $data['nis'];

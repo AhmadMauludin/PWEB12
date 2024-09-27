@@ -3,7 +3,7 @@
       <div class="page-header">
         <h4>
           <i class="glyphicon glyphicon-edit"></i>
-          Ubah Data Login User
+          Ubah Data Login
         </h4>
       </div> <!-- /.page-header -->
       <?php

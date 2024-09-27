@@ -38,6 +38,13 @@
             <li class="list-group-item"><b>Keterangan : </b><?php echo $ket; ?></li>
             </li>
         </ul>
+        <ul class="list-group">
+            <li class="list-group-item active"><b>NILAI PRAKERIN & SEMINAR</b></li>
+            <li class="list-group-item"><b>Nilai PKL : </b><?php echo $nilaiprakerin; ?></li>
+            <li class="list-group-item"><b>Nilai Laporan : </b><?php echo $nilailaporan; ?></li>
+            <li class="list-group-item"><b>Nilai Aplikasi : </b><?php echo $nilaiaplikasi; ?></li>
+            </li>
+        </ul>
     </div>
     </form>
 </div> <!-- /.panel-body -->

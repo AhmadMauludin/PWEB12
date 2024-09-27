@@ -3,7 +3,7 @@
 require_once "config/database.php";
 
 if (isset($_POST['simpan'])) {
-    $id            = $_POST['id'];
+    $id            = $_POST['nis'];
     $username      = mysqli_real_escape_string($db, trim($_POST['username']));
     $password      = mysqli_real_escape_string($db, trim($_POST['password']));
     $level         = $_POST['level'];

@@ -27,16 +27,7 @@
         <hr>
 
         <form action="proses-daftar.php" method="post">
-            <p><label>Id akun login (Harap diingat) </label>
-                <?php
-                $query = mysqli_query($db, "SELECT * FROM user ORDER BY id DESC limit 1") or die('Query Error : ' . mysqli_error($db));
-                while ($data = mysqli_fetch_assoc($query)) {
-                    $id = $data['id'];
-                }
-                $idi = $id + 1;
-                ?>
-            <p><input type="text" name="id" value="<?php echo $idi; ?>" class="form_login" readonly></p>
-            <label>Username</label>
+            <p><label>Username</label>
             <P><input type="text" name="username" class="form_login" placeholder="Masukan Username" required="required"></P>
             <label>Password</label>
             <p><input type="password" name="password" class="form_login" placeholder="Masukkan Password" required="required"></p>

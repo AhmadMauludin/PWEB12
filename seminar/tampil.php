@@ -67,7 +67,7 @@ if (isset($_POST['cari'])) {
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Data seminar</h3>
+                <h3 class="panel-title">Data Seminar</h3>
             </div>
             <div class="panel-body">
                 <div class="table-responsive">

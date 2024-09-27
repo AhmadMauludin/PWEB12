@@ -81,6 +81,7 @@ if (isset($_POST['cari'])) {
                 <th>Id</th>
                 <th>Username</th>
                 <th>Level</th>
+                <th>NIS</th>
                 <th class='center'>Aksi</th>
               </tr>
             </thead>
@@ -88,7 +89,7 @@ if (isset($_POST['cari'])) {
             <tbody>
               <?php
               /* Pagination */
-              $batas = 5;
+              $batas = 10;
 
               if (isset($cari)) {
                 $jumlah_record = mysqli_query($db, "SELECT * FROM user
@@ -124,7 +125,8 @@ if (isset($_POST['cari'])) {
                       <td width='20' >$no</td>
                       <td width='50'>$data[id]</td>
                       <td width='150'>$data[username]</td>
-                      <td width='250'>$data[level]</td>
+                      <td width='150'>$data[level]</td>
+                      <td width='50'>$data[nis]</td>
                       <td width='100' class='center'>
                         <div class=''>
                         <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:5px' class='btn btn-success btn-sm' href='?page=detail&id=$data[id]'>
@@ -168,7 +170,7 @@ if (isset($_POST['cari'])) {
               <?php
               } else { ?>
                 <li>
-                  <a href="?hal=<?php echo $page - 1 ?>" aria-label="Previous">
+                  <a href="?page=user-tampil&hal=<?php echo $page - 1 ?>" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
                   </a>
                 </li>
@@ -180,7 +182,7 @@ if (isset($_POST['cari'])) {
               <?php
               for ($x = 1; $x <= $halaman; $x++) { ?>
                 <li class="">
-                  <a href="?hal=<?php echo $x ?>"><?php echo $x ?></a>
+                  <a href="?page=user-tampil&hal=<?php echo $x ?>"><?php echo $x ?></a>
                 </li>
               <?php
               }
@@ -197,7 +199,7 @@ if (isset($_POST['cari'])) {
               <?php
               } else { ?>
                 <li>
-                  <a href="?hal=<?php echo $page + 1 ?>" aria-label="Next">
+                  <a href="?page=user-tampil&hal=<?php echo $page + 1 ?>" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
                   </a>
                 </li>

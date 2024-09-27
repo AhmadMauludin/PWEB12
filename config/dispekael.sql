@@ -1,58 +1,36 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Sep 25, 2024 at 10:06 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
+-- Database Backup --
+-- Ver. : 1.0.1
+-- Host : 127.0.0.1
+-- Generating Time : Sep 27, 2024 at 11:55:01:AM
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `dispekael`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pegawai`
---
 
 CREATE TABLE `pegawai` (
-  `nis` int(8) NOT NULL,
+  `nis` int(8) NOT NULL AUTO_INCREMENT,
   `nama` varchar(50) NOT NULL,
   `jabatan` varchar(30) NOT NULL,
   `bidang` varchar(50) NOT NULL,
   `telp` varchar(15) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `foto` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `foto` varchar(255) NOT NULL,
+  PRIMARY KEY (`nis`)
+) ENGINE=InnoDB AUTO_INCREMENT=9091 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `pegawai`
---
-
-INSERT INTO `pegawai` (`nis`, `nama`, `jabatan`, `bidang`, `telp`, `email`, `foto`) VALUES
-(1, 'Ahmad Mauludin, S.Kom', 'Kabid', 'Aplikasi', '6289502918001', 'ahmadmaldin1799@gmail.com', '1350683862_WhatsApp Image 2023-08-24 at 21.05.13.jpeg'),
-(2, 'Maldines Uzumaki', 'Staf', 'Laporan', '6289765432', 'nidia@gmail.com', '335-1696307224982-removebg-preview.png');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `seminar`
---
+INSERT INTO pegawai VALUES
+("1","Ahmad Mauludin, S.Kom","Kaprog","Ketua","6289502918001","ahmadmaldin1799@gmail.com","1350683862_WhatsApp Image 2023-08-24 at 21.05.13.jpeg"),
+("2","Cintiani Dewy, S.Pd","Pembimbing","BPKAD","62897888777","bucin@gmail.com","826369807_BRIPKAguide (1).png"),
+("3","Maldin Uzumaki, S.Pd","Penguji","Laporan","6289765432","maldines@gmail.com","335-1696307224982-removebg-preview.png"),
+("4","Mohammad Rifqie Fauzi, S.Kom","Penguji","Aplikasi","62877788899","mrifqie@gmail.com","410764901_1000_F_435340582_8yoV1uzvHNOYzddAgHZuXJgSdquFrkJp.jpg"),
+("5","Winiar Yuliany, S.Sn","Pembimbing","Diskominfosanditik","62897666555","wini@gmail.com","1425881065_city.png"),
+("6","H. Deky Gunawan, S.Pd.I","Pembimbing","Dinas Arsip","6281322333057","deky@gmail.com","1600716638_SMK.jpg"),
+("7","Ai Siti Nurwaskanah, S.Pd","Pembimbing","Kementerian Agama","6287769613803","ai@gmail.com","1934989062_1696307224982.jpg"),
+("8","Wawan Setaiwan, S.Pd","Pembimbing","Disparbudpora","6282121922059","wawan@gmai.com","1558080652_SMK.jpg"),
+("9","Hj. Nina Marlina, S.Pd","Pembimbing","Disdukcapil","6281320341057","nina@gmail.com","1460193531_SMK.jpg"),
+("10","Doni Mulyadi, S.Pd","Pembimbing","Dinas Pendidikan","6281563887197","doni@gmail.com","57024353_SMK.jpg"),
+("11","Erna Sri Meilani M, S.S","Pembimbing","Diskoperindag","6285222680088","erna@gmail.com","1147625936_SMK.jpg");
 
 CREATE TABLE `seminar` (
-  `idseminar` int(5) NOT NULL,
+  `idseminar` int(5) NOT NULL AUTO_INCREMENT,
   `nis` int(8) NOT NULL,
   `judul` varchar(255) NOT NULL,
   `file` varchar(255) NOT NULL,
@@ -63,120 +41,48 @@ CREATE TABLE `seminar` (
   `pengujiapl` int(8) NOT NULL,
   `nilaiprakerin` int(3) NOT NULL,
   `nilailaporan` int(3) NOT NULL,
-  `nilaiaplikasi` int(3) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `nilaiaplikasi` int(3) NOT NULL,
+  PRIMARY KEY (`idseminar`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `seminar`
---
-
-INSERT INTO `seminar` (`idseminar`, `nis`, `judul`, `file`, `tautan`, `statussem`, `ket`, `pengujilap`, `pengujiapl`, `nilaiprakerin`, `nilailaporan`, `nilaiaplikasi`) VALUES
-(3, 3333, 'Aplikasi Seminar Prakerin Berbasis Web', '55203352_File Seminar.pdf', 'github.com/AhmadMauludin/PWEB12', 'Tidak Lulus', 'Selamat seminar nidia', 2, 1, 0, 0, 0),
-(4, 1234, 'Aplikasi Berbasis Web', '940491242_File Seminar.pdf', 'github.com/AhmadMauludin/PWEB12', 'Disetujui', 'Selamat seminar', 2, 1, 0, 0, 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user`
---
+INSERT INTO seminar VALUES
+("5","120220795","Aplikasi Berbasis Web","1578981951_File Seminar.pdf","github.com/AhmadMauludin/PWEB12","Lulus","Selamat seminar","3","4","95","90","85");
 
 CREATE TABLE `user` (
-  `id` int(9) NOT NULL,
+  `id` bigint(12) NOT NULL AUTO_INCREMENT,
   `username` varchar(30) NOT NULL,
   `password` varchar(30) NOT NULL,
   `level` varchar(30) NOT NULL,
-  `nis` varchar(9) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `nis` varchar(9) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=120220796 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id`, `username`, `password`, `level`, `nis`) VALUES
-(1, 'ahmadmauludin', 'ahmad', 'Admin', '1111'),
-(3, 'maldines', 'maldin', 'Pegawai', '2222'),
-(6, 'nidia', 'nidia', 'User', '3333'),
-(7, 'defa', 'defa', 'User', '1234'),
-(8, 'fauzyyasser', 'fauzy', 'User', '9876');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `users`
---
+INSERT INTO user VALUES
+("1","ahmadmauludin","ahmad","Admin","1"),
+("2","cintiani","dewy","Pegawai","2"),
+("3","maldin","maldin","Pegawai","3"),
+("4","rifqie","rifqie","Pegawai","4"),
+("5","winiar","winiar","Pegawai","5"),
+("6","dekygunawan","deky","Pegawai","6"),
+("7","ainurwaskanah","ai","Pegawai","7"),
+("8","wawansetiawan","wawan","Pegawai","8"),
+("9","ninamarlina","nina","Pegawai","9"),
+("10","donimulyadi","doni","Pegawai","10"),
+("11","ernasrimeilani","erna","Pegawai","11"),
+("120220795","muhgra","agra","User","120220795");
 
 CREATE TABLE `users` (
-  `nis` int(8) NOT NULL,
-  `id` int(8) NOT NULL,
+  `nis` bigint(12) unsigned NOT NULL,
+  `id` bigint(12) unsigned NOT NULL,
   `nama` varchar(255) NOT NULL,
   `tanggal_lahir` date NOT NULL,
   `alamat` varchar(255) NOT NULL,
   `instansi` varchar(100) NOT NULL,
   `telp` varchar(15) NOT NULL,
   `stat` varchar(30) NOT NULL,
-  `foto` varchar(255) NOT NULL
+  `foto` varchar(255) NOT NULL,
+  PRIMARY KEY (`nis`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`nis`, `id`, `nama`, `tanggal_lahir`, `alamat`, `instansi`, `telp`, `stat`, `foto`) VALUES
-(1234, 7, 'Deffa Sidik', '2024-09-01', 'Gundat Jaya', 'BPKAD', '6285175017991', 'Aktif', 'defa.jpg'),
-(3333, 6, 'Nidia Gitania Raya', '2024-09-04', 'Cina', 'BPKAD', '999999999', 'Aktif', '843-WhatsApp Image 2024-01-03 at 19.50.23 (1).jpeg'),
-(9876, 8, 'Fauzy Ahmad', '2024-09-25', 'Bandung', 'BPKAD', '99887766', 'Aktif', '1021152700_pratama-arhan-320x_.png');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `pegawai`
---
-ALTER TABLE `pegawai`
-  ADD PRIMARY KEY (`nis`);
-
---
--- Indexes for table `seminar`
---
-ALTER TABLE `seminar`
-  ADD PRIMARY KEY (`idseminar`);
-
---
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`nis`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `pegawai`
---
-ALTER TABLE `pegawai`
-  MODIFY `nis` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3334;
-
---
--- AUTO_INCREMENT for table `seminar`
---
-ALTER TABLE `seminar`
-  MODIFY `idseminar` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+INSERT INTO users VALUES
+("120220795","120220795","Muhamad Agra Rizkia Mulyana","2006-01-01","Sumedang Jawa Barat","Diskominfosanditik","628999000777","Aktif","646086561_city.png");
