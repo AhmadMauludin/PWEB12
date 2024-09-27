@@ -20,6 +20,8 @@
                 <li><a href="?page=users-tampil"> <i class="glyphicon glyphicon-user"></i> USERS </a></li>
                 <li><a href="?page=pegawai-tampil"> <i class="glyphicon glyphicon-user"></i> PEGAWAI</a></li>
                 <li><a href="?page=seminar-tampil"> <i class="glyphicon glyphicon-blackboard"></i> SEMINAR</a></li>
+                <li><a href="?page=tampil-nilai"> <i class="glyphicon glyphicon-blackboard"></i> NILAI</a></li>
+
                 <li><a href="?page=ubah&id=<?php echo $ids ?>"><i class="glyphicon glyphicon-cog"></i> SET</a></li>
                 <li><a href="config/backup.php"><i class="glyphicon glyphicon-floppy-save"></i> BACKUP DB</a></li>
                 <li><a href="logout.php"> <i class="glyphicon glyphicon-log-out"></i></a></li>

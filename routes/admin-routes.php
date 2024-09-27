@@ -66,4 +66,6 @@ if (empty($_GET["page"])) {
     include "seminar/aktivasi.php";
 } elseif ($_GET['page'] == 'seminar-hapus') {
     include "seminar/hapus.php";
+} elseif ($_GET['page'] == 'tampil-nilai') {
+    include "seminar/tampil-nilai.php";
 }

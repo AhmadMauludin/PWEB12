@@ -2,7 +2,7 @@
 -- Database Backup --
 -- Ver. : 1.0.1
 -- Host : 127.0.0.1
--- Generating Time : Sep 27, 2024 at 11:55:01:AM
+-- Generating Time : Sep 27, 2024 at 23:31:35:PM
 
 
 CREATE TABLE `pegawai` (
@@ -43,10 +43,11 @@ CREATE TABLE `seminar` (
   `nilailaporan` int(3) NOT NULL,
   `nilaiaplikasi` int(3) NOT NULL,
   PRIMARY KEY (`idseminar`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO seminar VALUES
-("5","120220795","Aplikasi Berbasis Web","1578981951_File Seminar.pdf","github.com/AhmadMauludin/PWEB12","Lulus","Selamat seminar","3","4","95","90","85");
+("5","120220795","Aplikasi Berbasis Web","1578981951_File Seminar.pdf","github.com/AhmadMauludin/PWEB12","Disetujui","Selamat seminar","3","4","78","0","85"),
+("6","120220803","Aplikasi Berbasis Web","1053844150_pdf-proposal-kunjungan-industri-2023_compress.pdf","github.com/AhmadMauludin/PKK11","Disetujui","Selamat seminar","3","4","0","95","0");
 
 CREATE TABLE `user` (
   `id` bigint(12) NOT NULL AUTO_INCREMENT,
@@ -55,7 +56,7 @@ CREATE TABLE `user` (
   `level` varchar(30) NOT NULL,
   `nis` varchar(9) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=120220796 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=120220804 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO user VALUES
 ("1","ahmadmauludin","ahmad","Admin","1"),
@@ -69,7 +70,8 @@ INSERT INTO user VALUES
 ("9","ninamarlina","nina","Pegawai","9"),
 ("10","donimulyadi","doni","Pegawai","10"),
 ("11","ernasrimeilani","erna","Pegawai","11"),
-("120220795","muhgra","agra","User","120220795");
+("120220795","muhgra","agra","User","120220795"),
+("120220803","sarahamelia","sarah","User","120220803");
 
 CREATE TABLE `users` (
   `nis` bigint(12) unsigned NOT NULL,
@@ -85,4 +87,5 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO users VALUES
-("120220795","120220795","Muhamad Agra Rizkia Mulyana","2006-01-01","Sumedang Jawa Barat","Diskominfosanditik","628999000777","Aktif","646086561_city.png");
+("120220795","120220795","Muhamad Agra Rizkia Mulyana","2006-01-01","Sumedang Jawa Barat","Diskominfosanditik","628999000777","Aktif","646086561_city.png"),
+("120220803","120220803","Sarah Amelia Anugrah","2006-06-30","Soreang - Bandung","Diskominfosanditik","628567788998","Aktif","163874413_WhatsApp Image 2023-08-24 at 21.54.38.jpeg");
