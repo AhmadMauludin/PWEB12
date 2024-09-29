@@ -1,5 +1,5 @@
 ### Panduan umum yang harus kalian lakukan dalam mengerjakan projek ini
-
+PANDUANNNNNNN
 [disampaikan pada hari Sabtu, 14 September 2024]
 
 1. Deskripsikan kebutuhan data (Basis Data) --> Lengkap
