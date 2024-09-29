@@ -42,13 +42,19 @@ git clone https://github.com/username/namarepositori.git namarepositori
 14. Lalu lihat pada file manager, maka akan ada folder repositori yang sebelumnya dikloning. Lalu masuk ke folder tersebut.
 15. Close terminal gitbash nya, lalu buka lagi. (Jika tidak mau diclose, bisa ketik `cd namafolderrepositori` maka terminal akan berpindah ke dalam repositori tersebut).
 
-Selanjutnya silahkan gunakan kode berikut untuk penggunaan git
-
 - **Perbarui repository** yang telah diunduh ke dalam komputer menggunakan perintah `git pull` contoh:
 
 ```
 git pull origin main
 ```
+
+memperbaharui repositori pada komputer hanya dilakukan ketika anda baru membuka lagi komputer, dan sebelumnya anda pernah melakukan perubahan pada komputer yang lain.
+
+# Penggunaan Lanjutan
+
+Selanjutnya dalam mengelola direktori ada 2 cara yang dapat dilakukan untuk melakukan update/pembaharuan file, folder, atau data pada repositori, yaitu menggunakan terminal gitbash atau langsung di dalam aplikasi vscode.
+
+**Jika menggunakan terminal gitbash,** pada setiap selesai mengerjakan projek, silahkan gunakan kode berikut untuk memperbaharui repositori, agar repositori anda sesuia antara di lokal/pc dan github.
 
 - **Mengunggah Perubahan**
 
@@ -91,3 +97,13 @@ git push -u origin main
 ```
 
 Setelah melakukan push pertama kali, terkadang akan muncul popup dari browser untuk melakukan login ke dalam akun github melalui browser, maka lakukan login dengan menggunakan email/username dan password github yang sudah anda inisiasikan sebelumnya. juga terkadang github meminta kode konfirmasi yang terdiri dari 6 digit angka yang dikirim oleh github ke email yang digunakan akun github tersebut. (jika menggunakan email saya, silahkan tanyakan kepada saya)
+
+**Jika langsung di vscode,** pada setiap **selesai mengerjakan projek**, silahkan perhatikan langkah berikut untuk memperbaharui repositori, agar repositori anda sesuai antara di lokal/pc dan github.
+
+1. Buka aplikasi vscode, lalu open folder.
+2. Pilih folder projek / repositori hasil unduhan/clone dari github anda.
+3. Lakukan pekerjaan coding anda seperti biasa. Setiap ada perubahan di dalam folder projek repositori yang anda kelola (baik itu menambah, menghapus dan mengubah apapun) pasti muncul tanda biru berisi angka pada icon fork, dan ketika di klik, maka akan muncul tombol Commit berwarna biru yang aktif.
+
+   ![lihat](panduan/pangit1.jpg)
+
+4. Klik tombol Commit tersebut
