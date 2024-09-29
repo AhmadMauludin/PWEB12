@@ -14,13 +14,30 @@
 6. **Install aplikasi git** yang dapat anda download di situs resminya https://git-scm.com/ lalu instal.
 7. Setelah git terinstall, **Buka file manager**, arahkan ke Folder **htdocs**.
 8. Buka terminal git dengan cara **klik kanan > open gitbash here**
-9. Inisiasikan username github, caranya ketikan git
-   ```
-   config —global [user.name](http://user.name) ahmadmaldin
-   ```
-10. Inisiasikan useremail github, caranya ketikan git config —global [user.email](http://user.email) ahmad.mauludin247@guru.smk.belajar.id
-11. Cek hasil confignya, caranya ketik git config —list
+9. **Inisiasikan username** github, caranya ketikan
+
+```
+git config --global user.name "ahmadmaldin"
+```
+
+10. **Inisiasikan useremail** github, caranya ketikan
+
+```
+git config --global user.email ahmad.mauludin247@guru.smk.belajar.id
+```
+
+11. Cek hasil confignya, caranya ketik
+
+```
+git config —list
+```
+
 12. Baca teks yang muncul, Jika username dan emailnya sudah sesuai, maka tandanya git anda sudah tertaut dengan github.
-13. Kloning repositori, caranya ketik git clone https://github.com/username/namarepositori.git namarepositori
+13. Kloning repositori, caranya ketik
+
+```
+git clone https://github.com/username/namarepositori.git namarepositori
+```
+
 14. Lalu lihat pada file manager, maka akan ada folder repositori yang sebelumnya dikloning. Lalu masuk ke folder tersebut.
-15. Close terminal gitbash nya, lalu buka lagi. (Jika tidak mau diclose, bisa ketik cd namafolderrepositori, maka terminal akan berpindah ke dalam repositori tersebut).
+15. Close terminal gitbash nya, lalu buka lagi. (Jika tidak mau diclose, bisa ketik `cd namafolderrepositori` maka terminal akan berpindah ke dalam repositori tersebut).
