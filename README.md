@@ -1,4 +1,4 @@
-## Praktikum P. Web
+## Praktikum PEMROGRAMAN Web
 
 Kali ini saya memberikan kalian tugas untuk mengingat kembali dasar - dasar dalam bahasa pemrograman PHP.
 Saya harap pada minggu ini kalian benar - benar faham bagaimana bahasa pemrograman PHP bekerja dan mengerti mengenai script dasar CRUD (Create, Read, Update & Delete) PHP. Walaupun ini sudah pernah dipelajari, jadikan sebagai mutola'ah agar kalian benar benar mengerti.
