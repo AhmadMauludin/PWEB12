@@ -15,7 +15,9 @@
 7. Setelah git terinstall, **Buka file manager**, arahkan ke Folder **htdocs**.
 8. Buka terminal git dengan cara **klik kanan > open gitbash here**
 9. Inisiasikan username github, caranya ketikan git
-   `config —global [user.name](http://user.name) ahmadmaldin`
+   ```
+   config —global [user.name](http://user.name) ahmadmaldin
+   ```
 10. Inisiasikan useremail github, caranya ketikan git config —global [user.email](http://user.email) ahmad.mauludin247@guru.smk.belajar.id
 11. Cek hasil confignya, caranya ketik git config —list
 12. Baca teks yang muncul, Jika username dan emailnya sudah sesuai, maka tandanya git anda sudah tertaut dengan github.
