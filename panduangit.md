@@ -33,7 +33,7 @@ git config —list
 ```
 
 12. Baca teks yang muncul, Jika username dan emailnya sudah sesuai, maka tandanya git anda sudah tertaut dengan github.
-13. Kloning repositori, caranya ketik
+13. Unduh atau clone repositori github ke komputer, caranya ketik
 
 ```
 git clone https://github.com/username/namarepositori.git namarepositori
