@@ -41,3 +41,53 @@ git clone https://github.com/username/namarepositori.git namarepositori
 
 14. Lalu lihat pada file manager, maka akan ada folder repositori yang sebelumnya dikloning. Lalu masuk ke folder tersebut.
 15. Close terminal gitbash nya, lalu buka lagi. (Jika tidak mau diclose, bisa ketik `cd namafolderrepositori` maka terminal akan berpindah ke dalam repositori tersebut).
+
+Selanjutnya silahkan gunakan kode berikut untuk penggunaan git
+
+- **Perbarui repository** yang telah diunduh ke dalam komputer menggunakan perintah `git pull` contoh:
+
+```
+git pull origin main
+```
+
+- **Mengunggah Perubahan**
+
+Jangan lupa untuk melakukan pull terlebih dahulu sebelum melakukan push.
+
+- **Tambah file baru atau ubah file**
+
+```
+git add <nama file>
+```
+
+- **Tambah beberapa file baru atau ubah beberapa file sekaligus**
+
+```
+git add .
+```
+
+- **Konfirmasi penambahan atau perubahan file**
+
+```
+git commit -m "<pesan commit>"
+```
+
+- **Ubah dan konfirmasi modifikasi beberapa file sekaligus**
+
+```
+git commit -a -m "<pesan commit>"
+```
+
+- **Kirim perubahan ke dalam repository**
+
+```
+git push origin main
+```
+
+atau
+
+```
+git push -u origin main
+```
+
+Setelah melakukan push pertama kali, terkadang akan muncul popup dari browser untuk melakukan login ke dalam akun github melalui browser, maka lakukan login dengan menggunakan email/username dan password github yang sudah anda inisiasikan sebelumnya. juga terkadang github meminta kode konfirmasi yang terdiri dari 6 digit angka yang dikirim oleh github ke email yang digunakan akun github tersebut. (jika menggunakan email saya, silahkan tanyakan kepada saya)
