@@ -126,10 +126,6 @@ Sama halnya dengan proses push menggunakan terminal gitbash, Setelah melakukan p
 
 Untuk melihat perubahannya silahkan buka kembali repositori anda pada github, dan cek apakah terjadi perubahan sesuai apa yang anda kerjakan pada repositori lokal di komputer.
 
-## Penggunaan Pada Github
-
-Ada kalanya
-
 ## Panduan Lainnya
 
 Untuk panduan lanjutan alangkah baiknya anda pelajari pada sumber berikut :
