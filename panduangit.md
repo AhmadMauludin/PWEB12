@@ -102,8 +102,37 @@ Setelah melakukan push pertama kali, terkadang akan muncul popup dari browser un
 
 1. Buka aplikasi vscode, lalu open folder.
 2. Pilih folder projek / repositori hasil unduhan/clone dari github anda.
-3. Lakukan pekerjaan coding anda seperti biasa. Setiap ada perubahan di dalam folder projek repositori yang anda kelola (baik itu menambah, menghapus dan mengubah apapun) pasti muncul tanda biru berisi angka pada icon fork, dan ketika di klik, maka akan muncul tombol Commit berwarna biru yang aktif.
+3. Lakukan pekerjaan coding anda seperti biasa. Setiap ada perubahan di dalam folder projek repositori yang anda kelola (baik itu menambah, menghapus dan mengubah apapun) pasti muncul tanda biru berisi angka pada icon fork, dan ketika di klik, maka akan muncul tombol **Commit** berwarna biru yang aktif.
 
    ![lihat](panduan/pangit1.jpg)
 
-4. Klik tombol Commit tersebut
+4. Klik tombol Commit tersebut, lalu vscode akan otomatis membuka file COMMIT_EDITMSG
+
+   ![lihat](panduan/pangit2.jpg)
+
+5. Ketikan pesan pada baris pertama mengenai perubahan apa yang anda lakukan pada projek anda agar suatu saat anda mengetahui perubahan terakhir dari projek, namun itu hanya bersifat opsional, sebenarnya anda juga boleh mengisi pesan apapun.
+
+   ![lihat](panduan/pangit3.jpg)
+
+6. Setelah diketikan, lalu save `ctrl + s` dan close file COMMIT_EDITMSG tersebut., maka nanti tombol Commit akan berubah menjadi **Sync Changes** dan tanda biru berangka pada icon fork akan hilang.
+
+   ![lihat](panduan/pangit4.jpg)
+
+7. Lalu klik tombol tersebut, itu menandakan bahwa antara repositori lokal pada komputer dan repositori pada github anda sudah sesuai.
+
+Sama halnya dengan proses push menggunakan terminal gitbash, Setelah melakukan push pertama kali, terkadang akan muncul popup dari browser untuk melakukan login, maka lakukan langkah seperti pada panduan di atas. namun setelahnya anda tidak akan diminta lagi untuk login ke github selama masih menggunakan komputer yang sama.
+
+## Mengecek Perubahan
+
+Untuk melihat perubahannya silahkan buka kembali repositori anda pada github, dan cek apakah terjadi perubahan sesuai apa yang anda kerjakan pada repositori lokal di komputer.
+
+## Panduan Lainnya
+
+Untuk panduan lanjutan alangkah baiknya anda pelajari pada sumber berikut :
+
+- Dokumentasi pengunaan git https://git-scm.com/book/id/v2
+- Panduan Ringkas https://rogerdudler.github.io/git-guide/index.id.html
+- Panduan Lain https://www.geeksforgeeks.org/git-cheat-sheet/
+- Panduan Simpel https://github.com/datascienceid/panduan-github
+
+Dan masih banyak lagi panduan yang dapat anda jelajahi di internet, silahkan.
