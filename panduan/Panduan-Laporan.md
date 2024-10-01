@@ -26,10 +26,10 @@ Tempat : Ruang Perpustakaan
 
 1. Laporan Prakerin (Cetak & PDF)
 2. Aplikasi Prakerin (github)
-3. File Presentasi (PDF)
+3. File Presentasi (PDF) [Contoh File](FilePresentasi.pdf)
 4. Buku Catatan
 5. Moderator (Kelas 11)
-6. Flyer Seminar
+6. Flyer Seminar [Contoh Flyer](Flyer.png)
 
 **Isi dalam file presentasi**
 
