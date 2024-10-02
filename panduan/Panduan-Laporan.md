@@ -49,3 +49,7 @@ B. Bab 3
 C. Bab 5
 
 - Kesimpulan
+
+# Buku - buku / Jurnal / Sumber Rujukan
+
+- Buku ajar Rekayasa Perangkat Lunak https://press.umsida.ac.id/index.php/umsidapress/article/download/978-623-6833-89-6/728/
