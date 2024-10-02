@@ -53,3 +53,5 @@ C. Bab 5
 # Buku - buku / Jurnal / Sumber Rujukan
 
 - Buku ajar Rekayasa Perangkat Lunak https://press.umsida.ac.id/index.php/umsidapress/article/download/978-623-6833-89-6/728/
+
+- Perangkat Lunak https://digilib.stekom.ac.id/assets/dokumen/ebook/feb_A86KOd3pXQQ4jY-YwUHd7qiV7d0-crBfiDKt9DeBlw_RotgI9Xjd_1665369429.pdf
