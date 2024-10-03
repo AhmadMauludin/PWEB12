@@ -61,3 +61,7 @@ C. Bab 5
 - UML dengan StarUML (Tutorial) https://evitriandini.stikom-bali.ac.id/2buku/buku1.pdf
 
 - UML Memodelkan Sistem Informasi https://evitriandini.stikom-bali.ac.id/2buku/buku2.pdf
+
+## Penulisan File Laporan
+
+File laporan diberi tanda [Done] jika sudah selesai.
