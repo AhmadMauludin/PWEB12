@@ -46,12 +46,13 @@ Kelompok :
 
 - login.php 1.1.1 (V)
 - cek-login.php 1.1.2 (P)
-- Dst.
 
 2. user
 
 - user-hapus.php 1.2.1 (P)
 - user-tampil.php 1.2.2 (V)
+- user-ubah.php (V)
+- user-perbaharui.php (P)
 
 3. Profile
 
@@ -78,13 +79,17 @@ Kelompok :
 
 - backup.php (P)
 
-**Untuk Pengguna 2()**
+**Untuk Pengguna 2(Pegawai)**
 
-A. menu 1
+1. Login
 
-- NamaFitur/File 2.1.1
-- NamaFitur/File 2.1.2
-- Dst.
+- login.php 1.1.1 (V)
+- cek-login.php 1.1.2 (P)
+
+2. user
+
+- user-ubah.php (V)
+- user-perbaharui.php (P)
 
 ### Keterangan
 
