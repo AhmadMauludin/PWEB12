@@ -1,6 +1,7 @@
 # Features this App
 
 Nama Aplikasi :
+
 Kelompok :
 
 ## Pengguna
@@ -48,3 +49,9 @@ A. menu 1
 - NamaFitur/File 2.1.1
 - NamaFitur/File 2.1.2
 - Dst.
+
+### Keterangan
+
+(V) : View, Untuk file yang menghasilkan tampilan input / output.
+
+(P) : Process, Untuk file tidak menghasilkan tampilan (Seperti database.php, proses-hapus.php).
