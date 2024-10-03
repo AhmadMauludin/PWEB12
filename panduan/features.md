@@ -6,41 +6,77 @@ Kelompok :
 
 ## Pengguna
 
-1.
-2.
-3.
+1. Admin
+2. Pegawai
+3. Siswa (users)
 
 ## Menu
 
-**Untuk Pengguna 1()**
+**Untuk Pengguna 1(Admin)**
 
-- menu
-- menu
-- dst.
+- login
+- user
+- users
+- pegawai
+- seminar
+- nilai
+- logout
+- backup db
 
-**Untuk Pengguna 2()**
+**Untuk Pengguna 2(Pegawai)**
 
-- menu
-- menu
-- dst.
+- login
+- user
+- profile (ubah username & password)
+- seminar
+- nilai
+- Logout
 
-**Dst**
+**Untuk Pengguna 3(Users/Siswa)**
+
+- login
+- daftar
+- seminar
 
 ## Fitur
 
-**Untuk Pengguna 1()**
+**Untuk Pengguna 1(Admin)**
 
-A. menu 1
+1. Login
 
-- NamaFitur/File 1.1.1 (V)
-- NamaFitur/File 1.1.2 (P)
+- login.php 1.1.1 (V)
+- cek-login.php 1.1.2 (P)
 - Dst.
 
-A. menu 2
+2. user
 
-- NamaFitur/File 1.2.1
-- NamaFitur/File 1.2.2 (P)
-- Dst.
+- user-hapus.php 1.2.1 (P)
+- user-tampil.php 1.2.2 (V)
+
+3. Profile
+
+- user-ubah.php 1.3.1 (V)
+- user-perbaharui.php 1.3.2 (P)
+
+4. Seminar
+
+- seminar-tampil.php (V)
+- seminar-detail.php (V)
+- seminar-print.php (V)
+- seminar-aktivasi.php (V)
+- seminar-aktifkan.php (P)
+
+5. Nilai
+
+- nilai-tampil.php (V)
+
+6. Logout
+
+- logout.php (P)
+
+7. Backup DB
+
+- backup.php (P)
 
 **Untuk Pengguna 2()**
 
