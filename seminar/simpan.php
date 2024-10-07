@@ -1,11 +1,11 @@
 <?php
 include 'config/database.php';
 
-$nis     = $_POST['nis'];
-$judul   = $_POST['judul'];
-$tautan  = $_POST['tautan'];
-$statussem  = $_POST['statussem'];
-$ket     = $_POST['ket'];
+$nis             = $_POST['nis'];
+$judul           = $_POST['judul'];
+$tautan          = $_POST['tautan'];
+$statussem       = $_POST['statussem'];
+$ket             = $_POST['ket'];
 $pengujilap      = $_POST['pengujilap'];
 $pengujiapl      = $_POST['pengujiapl'];
 $nilaiprakerin   = $_POST['nilaiprakerin'];

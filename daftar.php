@@ -29,9 +29,12 @@
         <form action="proses-daftar.php" method="post">
             <p><label>Username</label>
             <P><input type="text" name="username" class="form_login" placeholder="Masukan Username" required="required"></P>
+
             <label>Password</label>
             <p><input type="password" name="password" class="form_login" placeholder="Masukkan Password" required="required"></p>
-            <p><input type="hidden" name="level" class="form_login" placeholder="Masukan id" value="User" required="required"></P>
+
+            <p><input type="hidden" name="level" class="form_login" placeholder="" value="User" required="required"></P>
+
             <label>Nomor Induk Siswa</label>
             <p><input type="number" name="nis" class="form_login" placeholder="Masukan Nomor Induk Siswa" required="required"></p>
             <p>
