@@ -32,9 +32,6 @@ $nilai_prakerin = mysqli_num_rows(mysqli_query($db, "SELECT * FROM seminar where
 $nilai_laporan = mysqli_num_rows(mysqli_query($db, "SELECT * FROM seminar where nilailaporan != '0'"));
 $nilai_aplikasi = mysqli_num_rows(mysqli_query($db, "SELECT * FROM seminar where nilaiaplikasi != '0'"));
 
-$percen_nilpra = (100 * $nilai_prakerin / $jum_seminar);
-$percen_nillap = (100 * $nilai_laporan / $jum_seminar);
-$percen_nilapl = (100 * $nilai_aplikasi / $jum_seminar);
 
 // alert dashboard admin
 if ($jum_users_belum_aktif != 0) {

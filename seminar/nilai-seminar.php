@@ -9,8 +9,6 @@ $nama = $jb['nama'];
 $jab = $jb['jabatan'];
 $bid = $jb['bidang'];
 
-echo $niss . $bid . $jab . $nama;
-
 if (isset($_GET['id'])) {
     $idseminar   = $_GET['id'];
     $query = mysqli_query($db, "SELECT seminar.*, users.nama, users.instansi FROM seminar JOIN users ON users.nis = seminar.nis WHERE idseminar='$idseminar'") or die('Query Error : ' . mysqli_error($db));
@@ -39,21 +37,21 @@ if (isset($_GET['id'])) {
             <input type="hidden" class="form-control" name="idseminar" value="<?php echo $idseminar; ?>">
 
             <div class="form-group">
-                <label class="col-sm-2 control-label">Nama - Instansi</label>
+                <label class="col-sm-2 control-label">Nama - Instansi :</label>
                 <div class="col-sm-6">
                     <h5><?php echo $nama . " - " . $instansi; ?></h5>
                 </div>
             </div>
 
             <div class="form-group">
-                <label class="col-sm-2 control-label">Judul Seminar</label>
+                <label class="col-sm-2 control-label">Judul Seminar :</label>
                 <div class="col-sm-6">
                     <h5><?php echo $judul; ?></h5>
                 </div>
             </div>
 
             <div class="form-group">
-                <label class="col-sm-2 control-label">Status Seminar</label>
+                <label class="col-sm-2 control-label">Status Seminar :</label>
                 <div class="col-sm-6">
                     <h5><?php echo $statussem; ?></h5>
                 </div>
@@ -82,7 +80,7 @@ if (isset($_GET['id'])) {
             ?>
 
             <div class="form-group">
-                <label class="col-sm-2 control-label">Nilai Prakerin</label>
+                <label class="col-sm-2 control-label">Nilai Prakerin :</label>
                 <div class="col-sm-1">
                     <input type="number" class="form-control" name="nilaiprakerin" value="<?php echo $nilaiprakerin; ?>" <?php echo $type1; ?>>
                 </div>
@@ -90,14 +88,14 @@ if (isset($_GET['id'])) {
 
 
             <div class="form-group">
-                <label class="col-sm-2 control-label">Nilai Laporan</label>
+                <label class="col-sm-2 control-label">Nilai Laporan :</label>
                 <div class="col-sm-1">
                     <input type="number" class="form-control" name="nilailaporan" value="<?php echo $nilailaporan; ?>" <?php echo $type2; ?>>
                 </div>
             </div>
 
             <div class="form-group">
-                <label class="col-sm-2 control-label">Nilai Aplikasi</label>
+                <label class="col-sm-2 control-label">Nilai Aplikasi :</label>
                 <div class="col-sm-1">
                     <input type="number" class="form-control" name="nilaiaplikasi" value="<?php echo $nilaiaplikasi; ?>" <?php echo $type3; ?>>
                 </div>
