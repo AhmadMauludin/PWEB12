@@ -52,7 +52,7 @@ if (isset($_GET['id'])) {
                 </div>
             </div>
         </form>
-        <a href="?page=pegawai-tampil" class="btn btn-default btn-reset">Kembali</a>
+        <a href="?page=users-tampil" class="btn btn-default btn-reset">Kembali</a>
 
         <hr>
     </div>

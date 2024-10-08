@@ -31,7 +31,7 @@
             <li class="list-group-item"><b>Judul : </b><?php echo $judul; ?></li>
             <li class="list-group-item"><b>Tautan : </b><a href="https:<?php echo $tautan; ?>" target="_blank"><?php echo $tautan; ?></a></li>
             <li class="list-group-item"><b>File : </b><a href="seminar/files/<?php echo $file; ?>" target="_blank"><?php echo $file; ?></a></li>
-            <li class="list-group-item"><b>Status: <?php echo $statussem; ?></b> (<?php echo $ket; ?>)</li>
+            <li class="list-group-item"><b>Status : <?php echo $statussem; ?></b> (<?php echo $ket; ?>)</li>
 
             <?php
             $pengujilaporan = mysqli_query($db, "SELECT * from pegawai WHERE nis='$pengujilap'") or die('Query Error : ' . mysqli_error($db));

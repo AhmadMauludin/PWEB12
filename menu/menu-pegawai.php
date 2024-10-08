@@ -19,7 +19,7 @@
             <li><a href="?page=users-tampil"> <i class="glyphicon glyphicon-user"></i> USERS </a></li>
             <li><a href="?page=tampil-nilai"> <i class="glyphicon glyphicon-blackboard"></i> NILAI SEMINAR</a></li>
             <li><a href="?page=ubah&id=<?php echo $ids ?>"><i class="glyphicon glyphicon-cog"></i> SET</a></li>
-            <li><a href="logout.php"> <i class="glyphicon glyphicon-log-out"></i></a></li>
+            <li><a href="logout.php"> <i class="glyphicon glyphicon-log-out"></i> KELUAR</a></li>
         </ul>
     </div>
 </div>

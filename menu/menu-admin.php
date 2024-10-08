@@ -24,7 +24,7 @@
 
                 <li><a href="?page=ubah&id=<?php echo $ids ?>"><i class="glyphicon glyphicon-cog"></i> SET</a></li>
                 <li><a href="config/backup.php"><i class="glyphicon glyphicon-floppy-save"></i> BACKUP DB</a></li>
-                <li><a href="logout.php"> <i class="glyphicon glyphicon-log-out"></i></a></li>
+                <li><a href="logout.php"> <i class="glyphicon glyphicon-log-out"></i> KELUAR</a></li>
             </ul>
         </div>
     </div>
