@@ -86,14 +86,17 @@ require_once "config/database.php"; // Memanggil file koneksi dengan database
   ?>
 
   <nav class="navbar navbar-default navbar-fixed-top">
+
     <!--- untuk menampilkan menu sesuai dengan level -->
     <?php
     if ($_SESSION['level'] == "Admin") {
-      include 'menu/menu-admin.php';
+      include 'menu/menu-admin.php'; // Jika level pengguna yang login @Admin, maka akan memanggil file menu-admin.php yang terdapat pada folder menu.
+
     } else if ($_SESSION['level'] == "Pegawai") {
-      include 'menu/menu-pegawai.php';
+      include 'menu/menu-pegawai.php'; // Jika level pengguna yang login @Pegawai, maka akan memanggil file menu-admin.php yang terdapat pada folder menu.
+
     } else if ($_SESSION['level'] == "User") {
-      include 'menu/menu-user.php';
+      include 'menu/menu-user.php'; // Jika level pengguna yang login @User, maka akan memanggil file menu-admin.php yang terdapat pada folder menu.
     }
     ?>
   </nav>
@@ -102,13 +105,16 @@ require_once "config/database.php"; // Memanggil file koneksi dengan database
     <!--- untuk menampilkan routes sesuai dengan level -->
     <?php
     if ($_SESSION['level'] == "Admin") {
-      include 'routes/admin-routes.php';
+      include 'routes/admin-routes.php'; // jika level pengguna yang login @Admin, maka akan dipanggil file admin-routes.php yang berada pada folder routes.
+
     } else if ($_SESSION['level'] == "Pegawai") {
-      include 'routes/pegawai-routes.php';
+      include 'routes/pegawai-routes.php'; // jika level pengguna yang login @Pegawai, maka akan dipanggil file pegawai-routes.php yang berada pada folder routes.
+
     } else if ($_SESSION['level'] == "User") {
-      include 'routes/user-routes.php';
+      include 'routes/user-routes.php'; // jika level pengguna yang login @User, maka akan dipanggil file user-routes.php yang berada pada folder routes.
+
     } else if ($_SESSION['level'] == "") {
-      include 'routes/other.php';
+      include 'routes/other.php'; // jika level pengguna yang login bukan siapa-siapa, maka akan dipanggil file other.php
     }
     ?>
   </div>
