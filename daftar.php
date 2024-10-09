@@ -10,8 +10,6 @@
     <?php
     require_once "config/database.php";
 
-
-
     if (isset($_GET['pesan'])) {
         if ($_GET['pesan'] == "2") {
             echo "<div class='pesan'>Pendaftaran Akun Gagal</div>";

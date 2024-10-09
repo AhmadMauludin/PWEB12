@@ -9,7 +9,7 @@ if (isset($_POST['simpan'])) {
     $level         = $_POST['level'];
     $nis           = $_POST['nis'];
 
-    // perintah query untuk menyimpan data ke tabel is_siswa
+    // perintah query untuk menyimpan data ke tabel user
     $query = mysqli_query($db, "INSERT INTO user (id, username, password, level, nis) VALUES('$id','$username', '$password', '$level', '$nis')");
 
     // cek hasil query

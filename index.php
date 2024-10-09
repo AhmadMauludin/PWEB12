@@ -1,5 +1,5 @@
 <?php
-require_once "config/database.php";
+require_once "config/database.php"; // Memanggil file koneksi dengan database
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,6 +62,7 @@ require_once "config/database.php";
     }
   </script>
 
+  <!--- untuk menghilangkan beberapa komponen yang tidak diperlukan saat menggunakan fitur print -->
   <style>
     @media print {
       .print {
@@ -77,6 +78,8 @@ require_once "config/database.php";
   <?php
   session_start();
 
+  // jika tidak ada level yang ditemukan pada sesi login, maka akan diarahkan ke halaman login.php dengan tambahan pesan gagal.
+  // fitur ini digunakan agar yang belum login tidak dapat masuk ke dalam aplikasi.
   if ($_SESSION['level'] == "") {
     header("location:login.php?pesan=gagal");
   }
@@ -96,6 +99,7 @@ require_once "config/database.php";
   </nav>
 
   <div class="container-fluid">
+    <!--- untuk menampilkan routes sesuai dengan level -->
     <?php
     if ($_SESSION['level'] == "Admin") {
       include 'routes/admin-routes.php';
@@ -107,8 +111,9 @@ require_once "config/database.php";
       include 'routes/other.php';
     }
     ?>
-  </div> <!-- /.container-fluid -->
+  </div>
 
+  <!--- Footer / kaki -->
   <footer class="footer">
     <div class="container-fluid">
       <p class="text-muted pull-left">Dispekael</p>
@@ -135,6 +140,7 @@ require_once "config/database.php";
       $('[data-toggle="tooltip"]').tooltip();
     })
   </script>
+
 </body>
 
 </html>

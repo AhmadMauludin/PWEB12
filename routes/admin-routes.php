@@ -52,6 +52,8 @@ if (empty($_GET["page"])) {
     include "users/aktivasi.php";
 } elseif ($_GET['page'] == 'users-hapus') {
     include "users/hapus.php";
+} elseif ($_GET['page'] == 'users-print-detail') {
+    include "users/print-detail.php";
 
     // seminar
 } elseif ($_GET['page'] == 'seminar-tampil') {

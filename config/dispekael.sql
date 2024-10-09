@@ -2,7 +2,7 @@
 -- Database Backup --
 -- Ver. : 1.0.1
 -- Host : 127.0.0.1
--- Generating Time : Oct 08, 2024 at 04:20:41:AM
+-- Generating Time : Oct 09, 2024 at 05:25:31:AM
 
 
 CREATE TABLE `pegawai` (
@@ -43,8 +43,10 @@ CREATE TABLE `seminar` (
   `nilailaporan` int(3) NOT NULL,
   `nilaiaplikasi` int(3) NOT NULL,
   PRIMARY KEY (`idseminar`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+INSERT INTO seminar VALUES
+("21","120220795","Aplikasi Seminar Prakerin Berbasis Web","558204841_File Seminar.pdf","github.com/AhmadMauludin/PWEB12","Disetujui","Selamat seminar","3","4","90","0","0");
 
 CREATE TABLE `user` (
   `id` bigint(12) NOT NULL AUTO_INCREMENT,
@@ -53,7 +55,7 @@ CREATE TABLE `user` (
   `level` varchar(30) NOT NULL,
   `nis` varchar(9) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1284567953666 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1284567953667 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO user VALUES
 ("1","ahmadmauludin","ahmad","Admin","1"),
@@ -67,7 +69,8 @@ INSERT INTO user VALUES
 ("9","ninamarlina","nina","Pegawai","9"),
 ("10","donimulyadi","doni","Pegawai","10"),
 ("11","ernasrimeilani","erna","Pegawai","11"),
-("123","fauzy","123","User","123");
+("120220795","Muhamad Agra Rizkia Mulyana","agra","User","120220795"),
+("120220806","Suci Nur Fauziah","suci","User","120220806");
 
 CREATE TABLE `users` (
   `nis` bigint(12) unsigned NOT NULL,
@@ -81,3 +84,7 @@ CREATE TABLE `users` (
   `foto` varchar(255) NOT NULL,
   PRIMARY KEY (`nis`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO users VALUES
+("120220795","120220795","Muhamad Agra Rizkia Mulyana","2005-12-09","Sumedang","Diskominfosanditik","6285172889999","Aktif","1398199758_pratama-arhan-320x_.png"),
+("120220806","120220806","Suci Nur Fauziah","2005-04-09","Rancakalong Sumedang","BPKAD","628999888877","Aktif","293161120_images.jpeg");
