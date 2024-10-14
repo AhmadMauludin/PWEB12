@@ -8,10 +8,9 @@ require_once "config/database.php"; // Memanggil file koneksi dengan database
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
   <title>Dispekael</title>
 
-  <!-- favicon -->
   <link rel="shortcut icon" href="assets/img/favicon.png">
 
   <!-- Bootstrap -->
@@ -127,9 +126,7 @@ require_once "config/database.php"; // Memanggil file koneksi dengan database
     </div>
   </footer>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="assets/js/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/bootstrap-datepicker.min.js"></script>
 
