@@ -2,7 +2,7 @@
 -- Database Backup --
 -- Ver. : 1.0.1
 -- Host : 127.0.0.1
--- Generating Time : Oct 09, 2024 at 05:25:31:AM
+-- Generating Time : Oct 14, 2024 at 07:51:11:AM
 
 
 CREATE TABLE `pegawai` (

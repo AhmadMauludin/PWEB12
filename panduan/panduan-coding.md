@@ -42,3 +42,25 @@ Isinya copy paste saja dari apk saya.
 ### Menu & Routes
 
 Sebenarnya, tampilan halaman index.php hanyalah berisi footer saja, adapun menu dan isinya adalah pemanggilan dari file menu dan routes. pemanggilan kedua file tersebut ke dalam tampilan index.php disesuaikan dengan level pengguna yang login. jika yang login adalah Admin, maka menu dan routes yang ditampilkan adalah khusus untuk admin. dan jika yang login nya adalah pegawai maka menu dan routes yang ditampilkan juga adalah khusus untuk pegawai. (Silahkan pelajari isi setiap file pada folder menu dan routes)
+
+File routes disini berfungsi sebagai perutean fitur yang dimiliki oleh pengguna. untuk membuatnya, pastikan setiap pengguna sudah ditentukan terlebih dahulu hak akses atas fitur apa saja yang diperbolehkan untuknya. silahkan lihat file routes yang saya buat lalu sesuaikan isinya berdasarkan kebutuhan aplikasi yang kalian buat.
+
+### Mempersiapkan folder pengelolaan data / Class
+
+Dalam pengelolaan sebuah data/class, biasanya fitur / halaman yang diperlukan adalah sebagai berikut
+
+1. tampil.php (v) --> termasuk fitur pencarian data di dalamnya.
+2. detail.php (v)
+3. tambah.php (v)
+4. simpan.php (p)
+5. edit.php (v)
+6. update.php (p)
+7. hapus.php (p)
+8. print.php (v)
+9. kirim.php (v)
+
+**Ket :**
+**v** : view, merupakan file yang nantinya menghasilkan tampilan dalam aplikasi.
+**p** : process, merupakan file yang hanya proses saja yang nantinya tidak memunculkan tampilan dalam aplikasinya.
+
+dari ke 9 file tersebut, ada beberapa file yang saling membutuhkan (tidak berdiri sendiri) yaitu tambah.php dengan simpan.php serta edit.php dengan update.php, adapun selain itu, maka mereka berdiri sendiri.
