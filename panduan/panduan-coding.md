@@ -60,7 +60,8 @@ Dalam pengelolaan sebuah data/class, biasanya fitur / halaman yang diperlukan ad
 9. kirim.php (v)
 
 **Ket :**
-**v** : view, merupakan file yang nantinya menghasilkan tampilan dalam aplikasi.
-**p** : process, merupakan file yang hanya proses saja yang nantinya tidak memunculkan tampilan dalam aplikasinya.
+
+- **v** : view, merupakan file yang nantinya menghasilkan tampilan dalam aplikasi.
+- **p** : process, merupakan file yang hanya proses saja yang nantinya tidak memunculkan tampilan dalam aplikasinya.
 
 dari ke 9 file tersebut, ada beberapa file yang saling membutuhkan (tidak berdiri sendiri) yaitu tambah.php dengan simpan.php serta edit.php dengan update.php, adapun selain itu, maka mereka berdiri sendiri.
