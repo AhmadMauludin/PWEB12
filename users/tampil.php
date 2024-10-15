@@ -10,17 +10,17 @@ if ($_SESSION['level'] == "Admin") {
 }
 
 if ($_SESSION['level'] == "Admin") {
-    $isicari = "";
+    $isicari = ""; // jika levelnya Admin maka akan membuat variabel $isicari kosong
 } else if ($_SESSION['level'] == "User") {
-    $isicari = "$data[instansi]";
+    $isicari = "$data[instansi]"; // jika levelnya user/siswa maka variabel $isicari berisi instansi dari siswa tersebut
 } else if ($_SESSION['level'] == "Pegawai") {
-    $isicari = "";
+    $isicari = ""; // jika levelnya Pegawai maka akan membuat variabel $isicari kosong
 }
 
 if (isset($_POST['cari'])) {
     $cari = $_POST['cari'];
 } else {
-    $cari = "$isicari";
+    $cari = "$isicari"; // variabel $cari adalah apapun kata pada $isicari dan variabel $cari ini adalah untuk pencarian. (lihat perbedaannya pada tampilan data users saat login sebagai user dan admin)
 }
 ?>
 
