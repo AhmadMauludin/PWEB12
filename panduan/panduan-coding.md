@@ -65,3 +65,14 @@ Dalam pengelolaan sebuah data/class, biasanya fitur / halaman yang diperlukan ad
 - **p** : process, merupakan file yang hanya proses saja yang nantinya tidak memunculkan tampilan dalam aplikasinya.
 
 dari ke 9 file tersebut, ada beberapa file yang saling membutuhkan (tidak berdiri sendiri) yaitu tambah.php dengan simpan.php serta edit.php dengan update.php, adapun selain itu, maka mereka berdiri sendiri.
+
+**Antara kedua file yang saling membutuhkan**
+diantara kedua file yang saling membutuhkan tersebut memiliki fungsi masing - masing, misal pada pasangan file tambah.php dan simpan.php:
+
+file tambah.php berfungsi sebagai tampilan formulir yang dapat menyimpan inputan sementara dari pengguna, selanjutnya (saat penggguna mengklik **simpan**) data yang sudah diinput dikirim ke file simpan.php, dan oleh file simpan.php file tersebut diproses agar disimpan ke dalam basisdata.
+
+**tambah.php -> simpan.php -> database**
+
+begitu pula pada file edit.php berfungsi sebagai tampilan formulir yang dapat menyimpan inputan sementara dari pengguna, selanjutnya (saat penggguna mengklik **ubah**) data yang sudah diinput dikirim ke file update.php, dan oleh file update.php file tersebut diproses agar disimpan ke dalam basisdata.
+
+namun berbeda dari file tambah, file edit terlebih dahulu mengambil data dari database mengenai baris yang akan diubah, data tersebut berdasarkan parameter / kriteria (id) yang diminta saat pengguna memilih data (pada halaman tampil data) yang akan dieksekusi (ubah, detail, hapus, kirim, print). itu sebabnya menu aksi selalu berada dipinggir barisan data (agar dapat sekaligus memilih id dari data yang akan dieksekusi oleh aksi), sedangkan fitur tambah data hanya membutuhkan satu tombol dan selalu terpisah (karena tambah data tidak memerlukan id dari data yang sudah ada). untuk lebih memahaminya, silahkan baca & teliti lebih lanjut setiap file fitur pengelolaan data pada aplikasi yang saya buat (saran : gunakan / pelajari fitur kelola data pada folder users / seminar)
